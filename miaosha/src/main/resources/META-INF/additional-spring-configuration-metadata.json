@@ -1,0 +1,57 @@
+{"properties": [
+  {
+    "name": "spring.datasource.timeBetweenEvictionRunsMillis",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.timeBetweenEvictionRunsMillis'"
+  },
+  {
+    "name": "spring.datasource.maxWait",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.maxWait'"
+  },
+  {
+    "name": "spring.datasource.filters",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.filters'"
+  },
+  {
+    "name": "spring.datasource.minIdle",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.minIdle'"
+  },
+  {
+    "name": "spring.datasource.validationQuery",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.validationQuery'"
+  },
+  {
+    "name": "spring.datasource.testWhileIdle",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.testWhileIdle'"
+  },
+  {
+    "name": "spring.datasource.testOnBorrow",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.testOnBorrow'"
+  },
+  {
+    "name": "spring.datasource.minEvictableIdleTimeMillis",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.minEvictableIdleTimeMillis'"
+  },
+  {
+    "name": "spring.datasource.poolPreparedStatements",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.poolPreparedStatements'"
+  },
+  {
+    "name": "spring.datasource.maxOpenPreparedStatements",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.maxOpenPreparedStatements'"
+  },
+  {
+    "name": "spring.datasource.testOnReturn",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.testOnReturn'"
+  }
+]}
