@@ -3,6 +3,7 @@ package com.dzj.miaosha.service;
 import javax.servlet.http.HttpServletResponse;
 
 import com.dzj.miaosha.entity.User;
+import com.dzj.miaosha.exception.MiaoshaException;
 import com.dzj.miaosha.vo.LoginVo;
 
 public interface UserService {
@@ -28,5 +29,5 @@ public interface UserService {
 	 * @param loginVo
 	 * @return
 	 */
-	public boolean login(HttpServletResponse response,LoginVo loginVo);
+	public boolean login(HttpServletResponse response,LoginVo loginVo) throws MiaoshaException;
 }

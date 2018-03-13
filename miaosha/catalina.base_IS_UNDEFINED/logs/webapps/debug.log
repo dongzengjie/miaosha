@@ -5,3 +5,15 @@
 2018-03-13 13:54:30.284 [main] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==>  Preparing: select * from user where user_id=? 
 2018-03-13 13:54:30.334 [main] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==> Parameters: 15901870552(Long)
 2018-03-13 13:54:30.394 [main] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - <==      Total: 1
+2018-03-13 16:39:00.548 [main] DEBUG com.dzj.miaosha.server.UserServiceTest - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-13 16:39:09.678 [main] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==>  Preparing: select * from user where user_id=? 
+2018-03-13 16:39:09.751 [main] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==> Parameters: 15901870552(Long)
+2018-03-13 16:39:09.796 [main] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - <==      Total: 1
+2018-03-13 16:40:32.705 [main] DEBUG com.dzj.miaosha.server.UserServiceTest - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-13 16:40:56.194 [main] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==>  Preparing: select * from user where user_id=? 
+2018-03-13 16:41:00.831 [main] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==> Parameters: 15901870552(Long)
+2018-03-13 16:41:04.143 [main] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - <==      Total: 1
+2018-03-13 16:42:02.464 [main] DEBUG com.dzj.miaosha.server.UserServiceTest - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-13 16:42:21.061 [main] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==>  Preparing: select * from user where user_id=? 
+2018-03-13 16:42:25.675 [main] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==> Parameters: 15901870552(Long)
+2018-03-13 16:42:29.008 [main] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - <==      Total: 1
