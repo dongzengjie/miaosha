@@ -1,25 +1,7 @@
-2018-03-11 12:00:13.361 [restartedMain] DEBUG com.dzj.miaosha.MiaoshaApplication - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
-2018-03-11 12:17:27.265 [restartedMain] DEBUG com.dzj.miaosha.MiaoshaApplication - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
-2018-03-11 12:32:52.682 [restartedMain] DEBUG com.dzj.miaosha.MiaoshaApplication - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
-2018-03-11 12:34:53.328 [restartedMain] DEBUG com.dzj.miaosha.MiaoshaApplication - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
-2018-03-11 12:36:13.687 [restartedMain] DEBUG com.dzj.miaosha.MiaoshaApplication - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
-2018-03-11 12:38:55.977 [restartedMain] DEBUG com.dzj.miaosha.MiaoshaApplication - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
-2018-03-11 12:40:17.537 [restartedMain] DEBUG com.dzj.miaosha.MiaoshaApplication - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
-2018-03-11 12:40:38.767 [restartedMain] DEBUG com.dzj.miaosha.MiaoshaApplication - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
-2018-03-11 12:40:59.283 [restartedMain] DEBUG com.dzj.miaosha.MiaoshaApplication - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
-2018-03-11 12:43:00.086 [restartedMain] DEBUG com.dzj.miaosha.MiaoshaApplication - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
-2018-03-11 12:45:16.439 [restartedMain] DEBUG com.dzj.miaosha.MiaoshaApplication - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
-2018-03-11 12:46:08.272 [restartedMain] DEBUG com.dzj.miaosha.MiaoshaApplication - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
-2018-03-11 12:56:56.242 [restartedMain] DEBUG com.dzj.miaosha.MiaoshaApplication - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
-2018-03-11 12:57:09.355 [http-nio-8080-exec-1] DEBUG com.dzj.miaosha.dao.SecKillDao.queryAllSecKill - ==>  Preparing: select * from t_seckill 
-2018-03-11 12:57:09.397 [http-nio-8080-exec-1] DEBUG com.dzj.miaosha.dao.SecKillDao.queryAllSecKill - ==> Parameters: 
-2018-03-11 12:57:09.470 [http-nio-8080-exec-1] DEBUG com.dzj.miaosha.dao.SecKillDao.queryAllSecKill - <==      Total: 3
-2018-03-11 12:57:19.666 [http-nio-8080-exec-2] DEBUG com.dzj.miaosha.dao.SecKillDao.queryAllSecKill - ==>  Preparing: select * from t_seckill 
-2018-03-11 12:57:19.666 [http-nio-8080-exec-2] DEBUG com.dzj.miaosha.dao.SecKillDao.queryAllSecKill - ==> Parameters: 
-2018-03-11 12:57:19.670 [http-nio-8080-exec-2] DEBUG com.dzj.miaosha.dao.SecKillDao.queryAllSecKill - <==      Total: 3
-2018-03-11 16:21:22.109 [restartedMain] DEBUG com.dzj.miaosha.MiaoshaApplication - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
-2018-03-11 16:24:28.283 [restartedMain] DEBUG com.dzj.miaosha.MiaoshaApplication - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
-2018-03-11 16:32:57.431 [restartedMain] DEBUG com.dzj.miaosha.MiaoshaApplication - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
-2018-03-11 16:34:53.464 [restartedMain] DEBUG com.dzj.miaosha.MiaoshaApplication - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
-2018-03-11 16:35:24.812 [restartedMain] DEBUG com.dzj.miaosha.MiaoshaApplication - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
-2018-03-11 17:12:22.234 [restartedMain] DEBUG com.dzj.miaosha.MiaoshaApplication - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-13 13:52:33.016 [main] DEBUG com.dzj.miaosha.dao.UserDaoTest - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-13 13:52:43.805 [main] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==>  Preparing: select * from user where user_id=? 
+2018-03-13 13:52:43.857 [main] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==> Parameters: 15901870552(Long)
+2018-03-13 13:54:22.222 [main] DEBUG com.dzj.miaosha.dao.UserDaoTest - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-13 13:54:30.284 [main] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==>  Preparing: select * from user where user_id=? 
+2018-03-13 13:54:30.334 [main] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==> Parameters: 15901870552(Long)
+2018-03-13 13:54:30.394 [main] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - <==      Total: 1
