@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dzj.miaosha.dao.GoodsDao">
+	
+	<select id="getListGoodsVo" resultType="com.dzj.miaosha.vo.GoodsVo">
+		SELECT 
+		g.*,
+		mg.miaosha_price,
+		mg.stock_count,
+		mg.start_date,
+		mg.end_date
+		FROM 
+		miaosha_goods mg left join goods g 
+		on mg.goods_id = g.goods_id
+		
+	</select>
+</mapper>
