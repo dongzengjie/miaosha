@@ -60,29 +60,29 @@ public class UserServiceImpl implements UserService {
 	}
 
 
-	public boolean login(HttpServletResponse response, LoginVo loginVo) throws MiaoshaException{
+	public String login(HttpServletResponse response, LoginVo loginVo) throws MiaoshaException{
 		
 		if(loginVo ==null) {
-			throw new MiaoshaException(UserEnum.USER_LOGIN_ERROR.getStateInfo());
+			throw new MiaoshaException(UserEnum.USER_LOGIN_ERROR.getStateInfo(),UserEnum.USER_LOGIN_ERROR.getState());
 		}
 		String mobile=loginVo.getMobile();
 		String password =loginVo.getPassword();
 		//根据mobile也就是userId查询user
 		User user =this.getByUserId(Long.valueOf(mobile));
 		if(user == null) {
-			throw new MiaoshaException(UserEnum.USER_NOT_EXIST.getStateInfo());
+			throw new MiaoshaException(UserEnum.USER_NOT_EXIST.getStateInfo(),UserEnum.USER_NOT_EXIST.getState());
 		}
 		//验证密码
 		String dbpass=user.getPassword();
 		String salt =user.getSalt();
 		String calcPass = MD5Util.formPassToDBPass(password, salt);
 		if(!calcPass.equals(dbpass)) {
-			throw new MiaoshaException(UserEnum.PASSWORD_ERROR.getStateInfo());
+			throw new MiaoshaException(UserEnum.PASSWORD_ERROR.getStateInfo(),UserEnum.PASSWORD_ERROR.getState());
 		}
 		//生成token
 		String token = UUIDUtil.getUUID();
 		addCookie(response, token, user);
-		return true;
+		return token;
 	}
 
 }

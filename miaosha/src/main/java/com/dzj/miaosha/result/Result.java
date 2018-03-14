@@ -13,12 +13,12 @@ public class Result<T> {
 		
 	}
 	
-	private  Result(CodeMsg msg) {
+	private  Result(String msg,int code) {
 		if(msg == null) {
 			return;
 		}
-		this.code=msg.getCode();
-		this.msg=msg.getMsg();
+		this.code=code;
+		this.msg=msg;
 		
 		
 	}
@@ -37,8 +37,8 @@ public class Result<T> {
 		
 	}
 	
-	public static <T> Result<T> error(CodeMsg  msg){
+	public static <T> Result<T> error(String msg,int code){
 		
-		return new Result(msg);
+		return new Result(msg,code);
 	}
  }

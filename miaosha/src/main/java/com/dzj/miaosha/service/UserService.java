@@ -29,5 +29,5 @@ public interface UserService {
 	 * @param loginVo
 	 * @return
 	 */
-	public boolean login(HttpServletResponse response,LoginVo loginVo) throws MiaoshaException;
+	public String login(HttpServletResponse response,LoginVo loginVo) throws MiaoshaException;
 }

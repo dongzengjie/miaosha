@@ -4,6 +4,8 @@ import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
 
+import com.dzj.miaosha.validator.IsMobile;
+
 /**
  * 校验用户登陆
  * @author DZJ
@@ -12,6 +14,7 @@ import org.hibernate.validator.constraints.Length;
 public class LoginVo {
 
 	@NotNull
+	@IsMobile
 	private String mobile;
 	
 	@NotNull

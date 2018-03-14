@@ -2,19 +2,33 @@ package com.dzj.miaosha.exception;
 
 public class MiaoshaException extends RuntimeException {
 
-	/**
-	 * 
-	 */
+	
 	private static final long serialVersionUID = 1L;
+
+	private int code;
+	
+	public int getCode() {
+		return code;
+	}
+
+	public void setCode(int code) {
+		this.code = code;
+	}
 
 	public MiaoshaException(String message, Throwable cause) {
 		super(message, cause);
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public MiaoshaException(String message) {
 		super(message);
-		// TODO Auto-generated constructor stub
+	
+	}
+	
+	public MiaoshaException(String message,int code) {
+		super(message);
+		this.code=code;
+	
 	}
 	
 
