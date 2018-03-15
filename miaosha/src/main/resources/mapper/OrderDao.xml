@@ -4,4 +4,55 @@
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.dzj.miaosha.dao.OrderDao">
 
+	<insert id="insertOrderInfo" parameterType="com.dzj.miaosha.entity.OrderInfo"
+		useGeneratedKeys="true" keyColumn="order_info_id" keyProperty="orderInfoId">
+
+		INSERT
+		INTO order_info
+		(
+
+		user_id,
+		goods_id,
+		delivery_addr_id,
+		goods_name,
+		goods_count,
+		goods_price,
+		order_channel,
+		status,
+		create_date,
+		pay_date
+		)
+		VALUES
+		(
+		#{userId},
+		#{goodsId},
+		#{deliveryAddrId},
+		#{goodsName},
+		#{goodsCount},
+		#{goodsPrice},
+		#{orderChannel},
+		#{status},
+		#{createDate},
+		#{payDate}
+		)
+	</insert>
+	
+	<insert id="insertMiaoshaOrder" parameterType="com.dzj.miaosha.entity.MiaoshaOrder">
+		INSERT INTO miaosha_order 
+		(
+			user_id,
+			order_id,
+			goods_id
+		)
+		VALUES
+		(
+			#{userId},
+			#{orderId},
+			#{goodsId}
+		)
+	</insert>
+	
+	<select id="getMiaoshaOrderByUserIdAndGoodsId" parameterType="com.dzj.miaosha.entity.MiaoshaOrder">
+		select * from miaosha_order where user_id=#{userId} and goods_id=#{goodsId}
+	</select>
 </mapper>

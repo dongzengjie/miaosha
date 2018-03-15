@@ -1,10 +1,12 @@
 package com.dzj.miaosha.dao;
 
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import com.dzj.miaosha.entity.MiaoshaOrder;
 import com.dzj.miaosha.entity.OrderInfo;
 
+@Mapper
 public interface OrderDao {
 
 	/**

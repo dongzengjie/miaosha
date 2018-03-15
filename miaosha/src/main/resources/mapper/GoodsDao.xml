@@ -3,17 +3,44 @@
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.dzj.miaosha.dao.GoodsDao">
-	
+
 	<select id="getListGoodsVo" resultType="com.dzj.miaosha.vo.GoodsVo">
-		SELECT 
+		SELECT
 		g.*,
 		mg.miaosha_price,
 		mg.stock_count,
 		mg.start_date,
 		mg.end_date
-		FROM 
-		miaosha_goods mg left join goods g 
+		FROM
+		miaosha_goods mg left join goods g
 		on mg.goods_id = g.goods_id
-		
+
 	</select>
+
+	<select id="getGoodsVoById" resultType="com.dzj.miaosha.vo.GoodsVo">
+		SELECT
+		g.*,
+		mg.miaosha_price,
+		mg.stock_count,
+		mg.start_date,
+		mg.end_date
+		FROM
+		miaosha_goods mg left join goods g
+		on mg.goods_id = g.goods_id
+		where
+		g.goods_id=#{goodsId}
+	</select>
+
+	<update id="reduceStock">
+		UPDATE miaosha_goods set stock_count = stock_count-1
+		where
+		goods_id=#{goodsId}
+		and
+		start_date <![CDATA[<=]]>
+		#{killTime}
+		and end_date <![CDATA[ >= ]]>
+		#{killTime}
+		and
+		stock_count > 0
+	</update>
 </mapper>

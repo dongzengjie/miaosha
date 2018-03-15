@@ -1,32 +1,109 @@
-2018-03-14 10:28:20.067 [restartedMain] DEBUG com.dzj.miaosha.MiaoshaApplication - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
-2018-03-14 11:51:55.755 [restartedMain] DEBUG com.dzj.miaosha.MiaoshaApplication - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
-2018-03-14 11:58:28.738 [restartedMain] DEBUG com.dzj.miaosha.MiaoshaApplication - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
-2018-03-14 11:58:56.798 [http-nio-8080-exec-9] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==>  Preparing: select * from user where user_id=? 
-2018-03-14 11:58:56.838 [http-nio-8080-exec-9] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==> Parameters: 15901870552(Long)
-2018-03-14 11:58:56.891 [http-nio-8080-exec-9] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - <==      Total: 1
-2018-03-14 12:00:01.453 [http-nio-8080-exec-6] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==>  Preparing: select * from user where user_id=? 
-2018-03-14 12:00:01.454 [http-nio-8080-exec-6] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==> Parameters: 15901870552(Long)
-2018-03-14 12:00:01.456 [http-nio-8080-exec-6] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - <==      Total: 1
-2018-03-14 12:00:04.890 [http-nio-8080-exec-9] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==>  Preparing: select * from user where user_id=? 
-2018-03-14 12:00:04.890 [http-nio-8080-exec-9] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==> Parameters: 15901870552(Long)
-2018-03-14 12:00:04.892 [http-nio-8080-exec-9] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - <==      Total: 1
-2018-03-14 12:07:49.996 [restartedMain] DEBUG com.dzj.miaosha.MiaoshaApplication - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
-2018-03-14 12:08:14.913 [http-nio-8080-exec-10] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==>  Preparing: select * from user where user_id=? 
-2018-03-14 12:08:14.948 [http-nio-8080-exec-10] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==> Parameters: 15901870552(Long)
-2018-03-14 12:08:14.974 [http-nio-8080-exec-10] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - <==      Total: 1
-2018-03-14 12:08:20.251 [http-nio-8080-exec-1] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==>  Preparing: select * from user where user_id=? 
-2018-03-14 12:08:20.252 [http-nio-8080-exec-1] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==> Parameters: 15901870552(Long)
-2018-03-14 12:08:20.255 [http-nio-8080-exec-1] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - <==      Total: 1
-2018-03-14 12:08:23.636 [http-nio-8080-exec-4] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==>  Preparing: select * from user where user_id=? 
-2018-03-14 12:08:23.637 [http-nio-8080-exec-4] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==> Parameters: 15901870552(Long)
-2018-03-14 12:08:23.639 [http-nio-8080-exec-4] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - <==      Total: 1
-2018-03-14 13:16:02.608 [restartedMain] DEBUG com.dzj.miaosha.MiaoshaApplication - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
-2018-03-14 13:16:34.873 [http-nio-8080-exec-1] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==>  Preparing: select * from user where user_id=? 
-2018-03-14 13:16:34.904 [http-nio-8080-exec-1] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==> Parameters: 15901870552(Long)
-2018-03-14 13:16:34.927 [http-nio-8080-exec-1] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - <==      Total: 1
-2018-03-14 13:16:49.971 [http-nio-8080-exec-2] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==>  Preparing: select * from user where user_id=? 
-2018-03-14 13:16:49.972 [http-nio-8080-exec-2] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==> Parameters: 15901870552(Long)
-2018-03-14 13:16:49.977 [http-nio-8080-exec-2] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - <==      Total: 1
-2018-03-14 13:22:24.907 [http-nio-8080-exec-5] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==>  Preparing: select * from user where user_id=? 
-2018-03-14 13:22:24.908 [http-nio-8080-exec-5] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==> Parameters: 15901870552(Long)
-2018-03-14 13:22:24.911 [http-nio-8080-exec-5] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - <==      Total: 1
+2018-03-15 09:10:02.833 [main] DEBUG com.dzj.miaosha.dao.GoodsDaoTest - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-15 09:10:11.379 [main] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - ==>  Preparing: SELECT g.*, mg.miaosha_price, mg.stock_count, mg.start_date, mg.end_date FROM miaosha_goods mg left join goods g on mg.goods_id = g.goods_id 
+2018-03-15 09:10:11.422 [main] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - ==> Parameters: 
+2018-03-15 09:10:11.489 [main] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - <==      Total: 2
+2018-03-15 09:13:19.290 [main] DEBUG com.dzj.miaosha.dao.GoodsDaoTest - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-15 09:13:27.742 [main] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - ==>  Preparing: SELECT g.*, mg.miaosha_price, mg.stock_count, mg.start_date, mg.end_date FROM miaosha_goods mg left join goods g on mg.goods_id = g.goods_id 
+2018-03-15 09:13:27.796 [main] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - ==> Parameters: 
+2018-03-15 09:13:27.857 [main] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - <==      Total: 2
+2018-03-15 09:16:51.079 [main] DEBUG com.dzj.miaosha.dao.GoodsDaoTest - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-15 09:16:59.338 [main] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - ==>  Preparing: SELECT g.*, mg.miaosha_price, mg.stock_count, mg.start_date, mg.end_date FROM miaosha_goods mg left join goods g on mg.goods_id = g.goods_id where g.goods_id=? 
+2018-03-15 09:16:59.394 [main] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - ==> Parameters: 1(Long)
+2018-03-15 09:16:59.434 [main] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - <==      Total: 1
+2018-03-15 12:33:55.172 [main] DEBUG com.dzj.miaosha.dao.GoodsDaoTest - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-15 12:34:03.893 [main] DEBUG com.dzj.miaosha.dao.GoodsDao.reduceStock - ==>  Preparing: UPDATE miaosha_goods set stock_count = stock_count-1 where goods_id=? and start_date <= ? and end_date >= ? and stock_count > 0 
+2018-03-15 12:34:03.951 [main] DEBUG com.dzj.miaosha.dao.GoodsDao.reduceStock - ==> Parameters: 1(Long), 2018-03-15 12:34:03.173(Timestamp), 2018-03-15 12:34:03.173(Timestamp)
+2018-03-15 12:34:03.961 [main] DEBUG com.dzj.miaosha.dao.GoodsDao.reduceStock - <==    Updates: 1
+2018-03-15 12:34:29.391 [main] DEBUG com.dzj.miaosha.dao.GoodsDaoTest - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-15 12:34:38.421 [main] DEBUG com.dzj.miaosha.dao.GoodsDao.reduceStock - ==>  Preparing: UPDATE miaosha_goods set stock_count = stock_count-1 where goods_id=? and start_date <= ? and end_date >= ? and stock_count > 0 
+2018-03-15 12:34:38.468 [main] DEBUG com.dzj.miaosha.dao.GoodsDao.reduceStock - ==> Parameters: 2(Long), 2018-03-15 12:34:37.662(Timestamp), 2018-03-15 12:34:37.662(Timestamp)
+2018-03-15 12:34:38.472 [main] DEBUG com.dzj.miaosha.dao.GoodsDao.reduceStock - <==    Updates: 0
+2018-03-15 12:56:38.242 [main] DEBUG com.dzj.miaosha.dao.OrderTest - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-15 12:57:56.850 [main] DEBUG com.dzj.miaosha.dao.OrderTest - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-15 12:58:05.614 [main] DEBUG com.dzj.miaosha.dao.OrderDao.insertOrderInfo - ==>  Preparing: INSERT INTO order_info ( user_id, goods_id, delivery_addr_id, goods_name, goods_count, goods_price, order_channel, status, create_date, pay_date ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-03-15 12:58:05.689 [main] DEBUG com.dzj.miaosha.dao.OrderDao.insertOrderInfo - ==> Parameters: 15901870552(Long), 1(Long), null, null, 1(Integer), 1221.0(Double), null, null, 2018-03-15 12:58:04.915(Timestamp), null
+2018-03-15 12:58:05.698 [main] DEBUG com.dzj.miaosha.dao.OrderDao.insertOrderInfo - <==    Updates: 1
+2018-03-15 12:58:05.706 [main] DEBUG com.dzj.miaosha.dao.OrderDao.insertMiaoshaOrder - ==>  Preparing: INSERT INTO miaosha_order ( user_id, order_id, goods_id ) VALUES ( ?, ?, ? ) 
+2018-03-15 12:58:05.708 [main] DEBUG com.dzj.miaosha.dao.OrderDao.insertMiaoshaOrder - ==> Parameters: 15901870552(Long), 12(Long), 1(Long)
+2018-03-15 12:58:05.712 [main] DEBUG com.dzj.miaosha.dao.OrderDao.insertMiaoshaOrder - <==    Updates: 1
+2018-03-15 15:31:32.851 [restartedMain] DEBUG com.dzj.miaosha.MiaoshaApplication - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-15 15:34:07.015 [http-nio-8080-exec-1] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==>  Preparing: select * from user where user_id=? 
+2018-03-15 15:34:07.046 [http-nio-8080-exec-1] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==> Parameters: 15901870552(Long)
+2018-03-15 15:34:07.070 [http-nio-8080-exec-1] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - <==      Total: 1
+2018-03-15 16:16:34.128 [restartedMain] DEBUG com.dzj.miaosha.MiaoshaApplication - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-15 16:17:15.217 [http-nio-8080-exec-1] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==>  Preparing: select * from user where user_id=? 
+2018-03-15 16:17:15.264 [http-nio-8080-exec-1] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==> Parameters: 15901870552(Long)
+2018-03-15 16:17:15.294 [http-nio-8080-exec-1] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - <==      Total: 1
+2018-03-15 16:17:15.855 [http-nio-8080-exec-9] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - ==>  Preparing: SELECT g.*, mg.miaosha_price, mg.stock_count, mg.start_date, mg.end_date FROM miaosha_goods mg left join goods g on mg.goods_id = g.goods_id 
+2018-03-15 16:17:15.856 [http-nio-8080-exec-9] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - ==> Parameters: 
+2018-03-15 16:17:15.873 [http-nio-8080-exec-9] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - <==      Total: 2
+2018-03-15 16:18:21.166 [http-nio-8080-exec-6] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - ==>  Preparing: SELECT g.*, mg.miaosha_price, mg.stock_count, mg.start_date, mg.end_date FROM miaosha_goods mg left join goods g on mg.goods_id = g.goods_id 
+2018-03-15 16:18:21.166 [http-nio-8080-exec-6] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - ==> Parameters: 
+2018-03-15 16:18:21.171 [http-nio-8080-exec-6] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - <==      Total: 2
+2018-03-15 16:19:47.733 [http-nio-8080-exec-4] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - ==>  Preparing: SELECT g.*, mg.miaosha_price, mg.stock_count, mg.start_date, mg.end_date FROM miaosha_goods mg left join goods g on mg.goods_id = g.goods_id 
+2018-03-15 16:19:47.734 [http-nio-8080-exec-4] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - ==> Parameters: 
+2018-03-15 16:19:47.738 [http-nio-8080-exec-4] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - <==      Total: 2
+2018-03-15 16:20:18.124 [http-nio-8080-exec-2] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - ==>  Preparing: SELECT g.*, mg.miaosha_price, mg.stock_count, mg.start_date, mg.end_date FROM miaosha_goods mg left join goods g on mg.goods_id = g.goods_id 
+2018-03-15 16:20:18.124 [http-nio-8080-exec-2] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - ==> Parameters: 
+2018-03-15 16:20:18.129 [http-nio-8080-exec-2] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - <==      Total: 2
+2018-03-15 16:26:38.752 [restartedMain] DEBUG com.dzj.miaosha.MiaoshaApplication - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-15 16:28:47.351 [http-nio-8080-exec-1] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==>  Preparing: select * from user where user_id=? 
+2018-03-15 16:28:47.411 [http-nio-8080-exec-1] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==> Parameters: 15901870552(Long)
+2018-03-15 16:28:47.450 [http-nio-8080-exec-1] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - <==      Total: 1
+2018-03-15 16:28:48.108 [http-nio-8080-exec-7] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - ==>  Preparing: SELECT g.*, mg.miaosha_price, mg.stock_count, mg.start_date, mg.end_date FROM miaosha_goods mg left join goods g on mg.goods_id = g.goods_id 
+2018-03-15 16:28:48.109 [http-nio-8080-exec-7] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - ==> Parameters: 
+2018-03-15 16:28:48.135 [http-nio-8080-exec-7] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - <==      Total: 2
+2018-03-15 16:30:45.300 [http-nio-8080-exec-4] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==>  Preparing: select * from user where user_id=? 
+2018-03-15 16:30:45.301 [http-nio-8080-exec-4] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==> Parameters: 15901870552(Long)
+2018-03-15 16:30:45.303 [http-nio-8080-exec-4] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - <==      Total: 1
+2018-03-15 16:30:45.573 [http-nio-8080-exec-8] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - ==>  Preparing: SELECT g.*, mg.miaosha_price, mg.stock_count, mg.start_date, mg.end_date FROM miaosha_goods mg left join goods g on mg.goods_id = g.goods_id 
+2018-03-15 16:30:45.574 [http-nio-8080-exec-8] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - ==> Parameters: 
+2018-03-15 16:30:45.580 [http-nio-8080-exec-8] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - <==      Total: 2
+2018-03-15 16:44:49.960 [restartedMain] DEBUG com.dzj.miaosha.MiaoshaApplication - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-15 16:45:07.810 [http-nio-8080-exec-4] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - ==>  Preparing: SELECT g.*, mg.miaosha_price, mg.stock_count, mg.start_date, mg.end_date FROM miaosha_goods mg left join goods g on mg.goods_id = g.goods_id 
+2018-03-15 16:45:07.841 [http-nio-8080-exec-4] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - ==> Parameters: 
+2018-03-15 16:45:07.869 [http-nio-8080-exec-4] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - <==      Total: 2
+2018-03-15 16:55:01.031 [restartedMain] DEBUG com.dzj.miaosha.MiaoshaApplication - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-15 16:55:23.887 [http-nio-8080-exec-1] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - ==>  Preparing: SELECT g.*, mg.miaosha_price, mg.stock_count, mg.start_date, mg.end_date FROM miaosha_goods mg left join goods g on mg.goods_id = g.goods_id where g.goods_id=? 
+2018-03-15 16:55:23.922 [http-nio-8080-exec-1] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - ==> Parameters: 1(Long)
+2018-03-15 16:55:23.950 [http-nio-8080-exec-1] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - <==      Total: 1
+2018-03-15 16:55:35.676 [http-nio-8080-exec-2] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - ==>  Preparing: SELECT g.*, mg.miaosha_price, mg.stock_count, mg.start_date, mg.end_date FROM miaosha_goods mg left join goods g on mg.goods_id = g.goods_id where g.goods_id=? 
+2018-03-15 16:55:35.677 [http-nio-8080-exec-2] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - ==> Parameters: 1(Long)
+2018-03-15 16:55:35.682 [http-nio-8080-exec-2] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - <==      Total: 1
+2018-03-15 17:01:25.361 [restartedMain] DEBUG com.dzj.miaosha.MiaoshaApplication - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-15 17:01:38.731 [http-nio-8080-exec-1] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - ==>  Preparing: SELECT g.*, mg.miaosha_price, mg.stock_count, mg.start_date, mg.end_date FROM miaosha_goods mg left join goods g on mg.goods_id = g.goods_id where g.goods_id=? 
+2018-03-15 17:01:38.763 [http-nio-8080-exec-1] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - ==> Parameters: 1(Long)
+2018-03-15 17:01:38.789 [http-nio-8080-exec-1] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - <==      Total: 1
+2018-03-15 17:01:45.052 [http-nio-8080-exec-5] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - ==>  Preparing: SELECT g.*, mg.miaosha_price, mg.stock_count, mg.start_date, mg.end_date FROM miaosha_goods mg left join goods g on mg.goods_id = g.goods_id where g.goods_id=? 
+2018-03-15 17:01:45.053 [http-nio-8080-exec-5] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - ==> Parameters: 1(Long)
+2018-03-15 17:01:45.058 [http-nio-8080-exec-5] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - <==      Total: 1
+2018-03-15 17:01:46.029 [http-nio-8080-exec-9] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - ==>  Preparing: SELECT g.*, mg.miaosha_price, mg.stock_count, mg.start_date, mg.end_date FROM miaosha_goods mg left join goods g on mg.goods_id = g.goods_id 
+2018-03-15 17:01:46.030 [http-nio-8080-exec-9] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - ==> Parameters: 
+2018-03-15 17:01:46.037 [http-nio-8080-exec-9] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - <==      Total: 2
+2018-03-15 17:01:49.484 [http-nio-8080-exec-5] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - ==>  Preparing: SELECT g.*, mg.miaosha_price, mg.stock_count, mg.start_date, mg.end_date FROM miaosha_goods mg left join goods g on mg.goods_id = g.goods_id where g.goods_id=? 
+2018-03-15 17:01:49.485 [http-nio-8080-exec-5] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - ==> Parameters: 1(Long)
+2018-03-15 17:01:49.488 [http-nio-8080-exec-5] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - <==      Total: 1
+2018-03-15 17:03:12.572 [http-nio-8080-exec-9] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - ==>  Preparing: SELECT g.*, mg.miaosha_price, mg.stock_count, mg.start_date, mg.end_date FROM miaosha_goods mg left join goods g on mg.goods_id = g.goods_id where g.goods_id=? 
+2018-03-15 17:03:12.573 [http-nio-8080-exec-9] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - ==> Parameters: 1(Long)
+2018-03-15 17:03:12.576 [http-nio-8080-exec-9] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - <==      Total: 1
+2018-03-15 17:03:17.019 [http-nio-8080-exec-4] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - ==>  Preparing: SELECT g.*, mg.miaosha_price, mg.stock_count, mg.start_date, mg.end_date FROM miaosha_goods mg left join goods g on mg.goods_id = g.goods_id where g.goods_id=? 
+2018-03-15 17:03:17.020 [http-nio-8080-exec-4] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - ==> Parameters: 1(Long)
+2018-03-15 17:03:17.023 [http-nio-8080-exec-4] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - <==      Total: 1
+2018-03-15 17:04:26.019 [http-nio-8080-exec-7] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - ==>  Preparing: SELECT g.*, mg.miaosha_price, mg.stock_count, mg.start_date, mg.end_date FROM miaosha_goods mg left join goods g on mg.goods_id = g.goods_id where g.goods_id=? 
+2018-03-15 17:04:26.021 [http-nio-8080-exec-7] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - ==> Parameters: 1(Long)
+2018-03-15 17:04:26.025 [http-nio-8080-exec-7] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - <==      Total: 1
+2018-03-15 17:05:04.317 [http-nio-8080-exec-5] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - ==>  Preparing: SELECT g.*, mg.miaosha_price, mg.stock_count, mg.start_date, mg.end_date FROM miaosha_goods mg left join goods g on mg.goods_id = g.goods_id where g.goods_id=? 
+2018-03-15 17:05:04.319 [http-nio-8080-exec-5] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - ==> Parameters: 1(Long)
+2018-03-15 17:05:04.324 [http-nio-8080-exec-5] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - <==      Total: 1
+2018-03-15 17:07:42.438 [http-nio-8080-exec-5] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - ==>  Preparing: SELECT g.*, mg.miaosha_price, mg.stock_count, mg.start_date, mg.end_date FROM miaosha_goods mg left join goods g on mg.goods_id = g.goods_id where g.goods_id=? 
+2018-03-15 17:07:42.439 [http-nio-8080-exec-5] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - ==> Parameters: 1(Long)
+2018-03-15 17:07:42.442 [http-nio-8080-exec-5] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - <==      Total: 1
+2018-03-15 17:08:28.286 [http-nio-8080-exec-10] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==>  Preparing: select * from user where user_id=? 
+2018-03-15 17:08:28.287 [http-nio-8080-exec-10] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - ==> Parameters: 15901870552(Long)
+2018-03-15 17:08:28.290 [http-nio-8080-exec-10] DEBUG com.dzj.miaosha.dao.UserDao.getUserById - <==      Total: 1
+2018-03-15 17:08:28.495 [http-nio-8080-exec-4] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - ==>  Preparing: SELECT g.*, mg.miaosha_price, mg.stock_count, mg.start_date, mg.end_date FROM miaosha_goods mg left join goods g on mg.goods_id = g.goods_id 
+2018-03-15 17:08:28.495 [http-nio-8080-exec-4] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - ==> Parameters: 
+2018-03-15 17:08:28.498 [http-nio-8080-exec-4] DEBUG com.dzj.miaosha.dao.GoodsDao.getListGoodsVo - <==      Total: 2
+2018-03-15 17:08:32.513 [http-nio-8080-exec-7] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - ==>  Preparing: SELECT g.*, mg.miaosha_price, mg.stock_count, mg.start_date, mg.end_date FROM miaosha_goods mg left join goods g on mg.goods_id = g.goods_id where g.goods_id=? 
+2018-03-15 17:08:32.514 [http-nio-8080-exec-7] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - ==> Parameters: 1(Long)
+2018-03-15 17:08:32.517 [http-nio-8080-exec-7] DEBUG com.dzj.miaosha.dao.GoodsDao.getGoodsVoById - <==      Total: 1

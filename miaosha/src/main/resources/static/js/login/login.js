@@ -2,8 +2,9 @@ $(function() {
 	var dologinUrl = '/miaosha/login/do_login';
 
 	$("#submit").click(
+			
 			function() {
-
+				g_showLoading();
 				var formpassword = $("#password").val();
 				var salt = g_passsword_salt;
 				var str = "" + salt.charAt(0) + salt.charAt(2) + formpassword
@@ -21,7 +22,7 @@ $(function() {
 						layer.closeAll();
 						if (data.code == 0) {
 							layer.msg("成功");
-							window.location.href = "/miaosha/login/toindex";
+							window.location.href = "/miaosha/goods/toindex";
 						} else {
 							layer.msg(data.msg);
 						}

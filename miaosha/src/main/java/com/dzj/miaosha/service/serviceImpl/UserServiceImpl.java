@@ -22,7 +22,7 @@ import com.dzj.miaosha.vo.LoginVo;
 @Service
 public class UserServiceImpl implements UserService {
 
-	private final String COOKIER_NAME_TOKEN="token";
+	public static final String COOKIER_NAME_TOKEN="token";
 	
 	@Autowired
 	private RedisService redisService;

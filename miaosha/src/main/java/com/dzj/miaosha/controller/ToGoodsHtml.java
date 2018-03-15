@@ -5,14 +5,18 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping(value="/login")
-public class ToLoginHtmlController {
-
-	@GetMapping(value="/tologin")
-	public String tologin() {
-		return "login";
+@RequestMapping(value="/goods")
+public class ToGoodsHtml {
+	
+	@GetMapping(value="/toindex")
+	public String toindex() {
+		return "index";
 		
 	}
 	
-	
+	@GetMapping(value="/todetail")
+	public String todetail() {
+		return "detail";
+		
+	}
 }

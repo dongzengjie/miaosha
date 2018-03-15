@@ -3,7 +3,7 @@ package com.dzj.miaosha.entity;
 public class Goods {
 
 	private Long goodsId;
-	private String goodName;
+	private String goodsName;
 	private String goodsTitle;
 	private String goodsImg;
 	private String goodsDetail;
@@ -15,11 +15,14 @@ public class Goods {
 	public void setGoodsId(Long goodsId) {
 		this.goodsId = goodsId;
 	}
-	public String getGoodName() {
-		return goodName;
+	
+	
+	
+	public String getGoodsName() {
+		return goodsName;
 	}
-	public void setGoodName(String goodName) {
-		this.goodName = goodName;
+	public void setGoodsName(String goodsName) {
+		this.goodsName = goodsName;
 	}
 	public String getGoodsTitle() {
 		return goodsTitle;
@@ -53,7 +56,7 @@ public class Goods {
 	}
 	@Override
 	public String toString() {
-		return "Goods [goodsId=" + goodsId + ", goodName=" + goodName + ", goodsTitle=" + goodsTitle + ", goodsImg="
+		return "Goods [goodsId=" + goodsId + ", goodName=" + goodsName + ", goodsTitle=" + goodsTitle + ", goodsImg="
 				+ goodsImg + ", goodsDetail=" + goodsDetail + ", goodsPrice=" + goodsPrice + ", goodsStock="
 				+ goodsStock + "]";
 	}
