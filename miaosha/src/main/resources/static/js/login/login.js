@@ -22,7 +22,8 @@ $(function() {
 						layer.closeAll();
 						if (data.code == 0) {
 							layer.msg("成功");
-							window.location.href = "/miaosha/goods/toindex";
+							//window.location.href = "/miaosha/goods/toindex";
+							window.location.href = "/miaosha/html/index.htm";
 						} else {
 							layer.msg(data.msg);
 						}

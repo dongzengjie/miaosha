@@ -25,6 +25,7 @@ public class UserLoginController {
 	public Result<String> do_login(HttpServletResponse response, @Valid LoginVo loginVo) {
 		
 		String token =userService.login(response, loginVo);
+		log.debug("登陆"+loginVo.getMobile());
 		return Result.success(token);
 		
 	}

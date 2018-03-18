@@ -1,5 +1,6 @@
 package com.dzj.miaosha.redis;
 
+import java.util.List;
 import java.util.prefs.PreferenceChangeEvent;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,6 +36,50 @@ public class RedisService {
 			String str = jedis.get(realKey);
 			T t = stringToBean(str, clazz);
 			return t;
+		} finally {
+			returnToPool(jedis);
+		}
+
+	}
+	
+	public <T> List<T> getList(KeyPrefix keyprefix, String key, Class<T> clazz) {
+		Jedis jedis = null;
+		try {
+			jedis = jedisPool.getResource();
+
+			String realKey = keyprefix.getPrefix() + key;
+
+			String str = jedis.get(realKey);
+			List<T> t =stringToList(str, clazz);
+			return t;
+		} finally {
+			returnToPool(jedis);
+		}
+
+	}
+	
+	
+	public <T> boolean setList(KeyPrefix keyprefix, String key, List<T> list) {
+		Jedis jedis = null;
+		try {
+			jedis = jedisPool.getResource();
+			String str = listToString(list);
+			if (str == null || str.length() <= 0) {
+				return false;
+			}
+
+			int seconds = keyprefix.expireSeconds();
+
+			String realKey = keyprefix.getPrefix() + key;
+
+			if (seconds <= 0) {
+				jedis.set(realKey, str);
+
+			}else {
+				jedis.setex(realKey, seconds, str);
+			}
+			
+			return true;
 		} finally {
 			returnToPool(jedis);
 		}
@@ -87,7 +132,7 @@ public class RedisService {
 			jedis = jedisPool.getResource();
 
 			String realKey = keyprefix.getPrefix() + key;
-
+			
 			return jedis.exists(realKey);
 		} finally {
 			returnToPool(jedis);
@@ -147,11 +192,31 @@ public class RedisService {
 		} else if (clazz == String.class) {
 			return (String) value;
 		} else if (clazz == long.class || clazz == Long.class) {
+			
 			return "" + value;
 		} else {
 			return JSON.toJSONString(value);
 		}
 
+	}
+	
+	@SuppressWarnings("unused")
+	private <T> String listToString(List<T> list) {
+		if(list ==null) {
+			return null;
+		}
+		return JSON.toJSONString(list);
+		
+	}
+	
+	
+	@SuppressWarnings("unchecked")
+	private <T> List<T> stringToList(String src,Class<T> clazz) {
+		if(src ==null) {
+			return null;
+		}
+		return JSON.parseArray(src,clazz) ;
+		
 	}
 
 	@SuppressWarnings("unchecked")

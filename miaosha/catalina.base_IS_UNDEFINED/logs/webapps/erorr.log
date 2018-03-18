@@ -1,5 +1,48 @@
-2018-03-15 15:34:24.651 [http-nio-8080-exec-4] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Request method 'GET' not supported
-2018-03-15 16:28:26.640 [http-nio-8080-exec-5] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - org.springframework.validation.BeanPropertyBindingResult: 1 errors
+2018-03-16 09:40:22.453 [http-nio-8080-exec-10] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 09:41:07.155 [http-nio-8080-exec-4] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 09:41:11.176 [http-nio-8080-exec-1] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - org.springframework.validation.BeanPropertyBindingResult: 1 errors
 Field error in object 'loginVo' on field 'mobile': rejected value []; codes [IsMobile.loginVo.mobile,IsMobile.mobile,IsMobile.java.lang.String,IsMobile]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [loginVo.mobile,mobile]; arguments []; default message [mobile],true]; default message [手机号码格式错误]
-2018-03-15 16:30:30.838 [http-nio-8080-exec-2] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - org.springframework.validation.BeanPropertyBindingResult: 1 errors
-Field error in object 'loginVo' on field 'mobile': rejected value [1590]; codes [IsMobile.loginVo.mobile,IsMobile.mobile,IsMobile.java.lang.String,IsMobile]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [loginVo.mobile,mobile]; arguments []; default message [mobile],true]; default message [手机号码格式错误]
+2018-03-16 09:41:21.476 [http-nio-8080-exec-4] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 12:12:06.491 [http-nio-8080-exec-10] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Request method 'GET' not supported
+2018-03-16 12:44:36.329 [http-nio-8080-exec-3] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - 密钥已被修改
+2018-03-16 12:48:28.310 [http-nio-8080-exec-9] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - 密钥已被修改
+2018-03-16 12:48:36.677 [http-nio-8080-exec-1] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - 密钥已被修改
+2018-03-16 12:49:57.167 [http-nio-8080-exec-8] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - 重复秒杀
+2018-03-16 13:05:30.876 [http-nio-8080-exec-3] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - 重复秒杀
+2018-03-16 13:07:06.816 [http-nio-8080-exec-10] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - 重复秒杀
+2018-03-16 16:19:46.474 [http-nio-8080-exec-79] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.474 [http-nio-8080-exec-76] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.474 [http-nio-8080-exec-88] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.474 [http-nio-8080-exec-58] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.474 [http-nio-8080-exec-54] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.474 [http-nio-8080-exec-167] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.474 [http-nio-8080-exec-51] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.474 [http-nio-8080-exec-155] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.474 [http-nio-8080-exec-147] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.474 [http-nio-8080-exec-60] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.474 [http-nio-8080-exec-143] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.474 [http-nio-8080-exec-131] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.474 [http-nio-8080-exec-34] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.474 [http-nio-8080-exec-95] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.475 [http-nio-8080-exec-148] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.474 [http-nio-8080-exec-6] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.475 [http-nio-8080-exec-63] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.474 [http-nio-8080-exec-47] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.475 [http-nio-8080-exec-67] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.475 [http-nio-8080-exec-164] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.475 [http-nio-8080-exec-15] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.475 [http-nio-8080-exec-187] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.475 [http-nio-8080-exec-71] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.475 [http-nio-8080-exec-111] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.475 [http-nio-8080-exec-188] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.475 [http-nio-8080-exec-171] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.475 [http-nio-8080-exec-124] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.475 [http-nio-8080-exec-135] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.475 [http-nio-8080-exec-28] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.475 [http-nio-8080-exec-38] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.475 [http-nio-8080-exec-175] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.475 [http-nio-8080-exec-22] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.475 [http-nio-8080-exec-199] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.475 [http-nio-8080-exec-184] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.475 [http-nio-8080-exec-91] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool
+2018-03-16 16:19:46.475 [http-nio-8080-exec-99] ERROR com.dzj.miaosha.exception.GlobalExceptionHandler - Could not get a resource from the pool

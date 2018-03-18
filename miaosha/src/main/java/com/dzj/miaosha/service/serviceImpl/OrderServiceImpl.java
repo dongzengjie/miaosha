@@ -11,6 +11,8 @@ import com.dzj.miaosha.entity.MiaoshaOrder;
 import com.dzj.miaosha.entity.OrderInfo;
 import com.dzj.miaosha.entity.User;
 import com.dzj.miaosha.exception.MiaoshaException;
+import com.dzj.miaosha.redis.OrderKey;
+import com.dzj.miaosha.redis.RedisService;
 import com.dzj.miaosha.service.OrderService;
 import com.dzj.miaosha.vo.GoodsVo;
 @Service
@@ -18,13 +20,20 @@ public class OrderServiceImpl implements OrderService {
 
 	@Autowired
 	private OrderDao orderDao;
+	@Autowired
+	private RedisService redisService;
 	
 	public MiaoshaOrder getMiaoshaOrderByUserIdAndGoodsId(long userId, long goodsId) throws MiaoshaException {
 		if(userId<=0 || goodsId <=0) {
 			throw new MiaoshaException("参数错误", GlobalEnums.Server_ERROR.getState());
 		}
 		
-		MiaoshaOrder miaoshaOrder =orderDao.getMiaoshaOrderByUserIdAndGoodsId(userId, goodsId);
+		 MiaoshaOrder miaoshaOrder =redisService.get(OrderKey.getMiaoshaOrderByUserIdAndGoodsId, userId+goodsId+"", MiaoshaOrder.class);
+		 if(miaoshaOrder == null) {
+			 miaoshaOrder =orderDao.getMiaoshaOrderByUserIdAndGoodsId(userId, goodsId);
+			 redisService.set(OrderKey.getMiaoshaOrderByUserIdAndGoodsId, userId+goodsId+"", miaoshaOrder);
+		 }
+	
 		if(miaoshaOrder != null) {
 			throw new MiaoshaException("重复秒杀", GlobalEnums.Server_ERROR.getState());
 		}else {
@@ -34,7 +43,7 @@ public class OrderServiceImpl implements OrderService {
 	}
 
 	@Override
-	public OrderInfo createOrder(User user, GoodsVo goodsVo) {
+	public OrderInfo createOrder(User user, GoodsVo goodsVo) throws MiaoshaException {
 		
 		OrderInfo orderInfo =new OrderInfo();
 		orderInfo.setCreateDate(new Date());
@@ -52,7 +61,10 @@ public class OrderServiceImpl implements OrderService {
 		miaoshaOrder.setOrderId(orderInfo.getOrderInfoId());
 		miaoshaOrder.setGoodsId(goodsVo.getGoodsId());
 		miaoshaOrder.setUserId(user.getUserId());
-		orderDao.insertMiaoshaOrder(miaoshaOrder);
+		int effect =orderDao.insertMiaoshaOrder(miaoshaOrder);
+		if(effect <=0) {
+			throw new MiaoshaException("重复秒杀", GlobalEnums.Server_ERROR.getState());
+		}
 		
 		return orderInfo;
 	}

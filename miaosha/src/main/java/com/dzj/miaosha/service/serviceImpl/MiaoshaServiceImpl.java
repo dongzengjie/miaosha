@@ -39,11 +39,13 @@ public class MiaoshaServiceImpl implements MiaoshaService {
 		if(Key_md5 ==null || ! Key_md5.equals(MD5Util.md5(goodsVo.getGoodsId()+md5stingr))) {
 			throw new MiaoshaException("密钥已被修改", GlobalEnums.Server_ERROR.getState());
 		}
-		orderService.getMiaoshaOrderByUserIdAndGoodsId(user.getUserId(), goodsVo.getGoodsId());
+		
 		OrderInfo orderInfo = orderService.createOrder(user, goodsVo);
 
-		goodsService.reduceStock(goodsVo.getGoodsId());
-
+		int effect =goodsService.reduceStock(goodsVo.getGoodsId());
+		if(effect <=0) {
+			throw new MiaoshaException("秒杀已经结束", GlobalEnums.Server_ERROR.getState());
+		}
 		return orderInfo;
 	}
 

@@ -14,6 +14,7 @@ import com.dzj.miaosha.entity.User;
 import com.dzj.miaosha.exception.MiaoshaException;
 import com.dzj.miaosha.redis.MiaoshaUserKey;
 import com.dzj.miaosha.redis.RedisService;
+import com.dzj.miaosha.redis.UserKey;
 import com.dzj.miaosha.service.UserService;
 import com.dzj.miaosha.util.MD5Util;
 import com.dzj.miaosha.util.UUIDUtil;
@@ -31,8 +32,12 @@ public class UserServiceImpl implements UserService {
 	private UserDao userDao;
 	
 	public User getByUserId(long userId) {
-		
-		return userDao.getUserById(userId);
+		User user =redisService.get(UserKey.getById, userId+"", User.class);
+		if(user ==null) {
+			user= userDao.getUserById(userId);
+			redisService.set(UserKey.getById, userId+"", user);
+		}
+		return user;
 	}
 
 

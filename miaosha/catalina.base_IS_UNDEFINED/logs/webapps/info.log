@@ -1,39 +1,35 @@
-2018-03-15 09:10:02.825 [main] INFO  com.dzj.miaosha.dao.GoodsDaoTest - Starting GoodsDaoTest on DESKTOP-MS8QNBH with PID 2880 (started by DZJ in E:\web\秒杀\miaosha\miaosha)
-2018-03-15 09:10:02.836 [main] INFO  com.dzj.miaosha.dao.GoodsDaoTest - No active profile set, falling back to default profiles: default
-2018-03-15 09:10:10.235 [main] INFO  com.dzj.miaosha.dao.GoodsDaoTest - Started GoodsDaoTest in 7.941 seconds (JVM running for 9.934)
-2018-03-15 09:13:19.289 [main] INFO  com.dzj.miaosha.dao.GoodsDaoTest - Starting GoodsDaoTest on DESKTOP-MS8QNBH with PID 12820 (started by DZJ in E:\web\秒杀\miaosha\miaosha)
-2018-03-15 09:13:19.291 [main] INFO  com.dzj.miaosha.dao.GoodsDaoTest - No active profile set, falling back to default profiles: default
-2018-03-15 09:13:26.796 [main] INFO  com.dzj.miaosha.dao.GoodsDaoTest - Started GoodsDaoTest in 8.072 seconds (JVM running for 9.687)
-2018-03-15 09:16:51.078 [main] INFO  com.dzj.miaosha.dao.GoodsDaoTest - Starting GoodsDaoTest on DESKTOP-MS8QNBH with PID 1164 (started by DZJ in E:\web\秒杀\miaosha\miaosha)
-2018-03-15 09:16:51.080 [main] INFO  com.dzj.miaosha.dao.GoodsDaoTest - No active profile set, falling back to default profiles: default
-2018-03-15 09:16:58.560 [main] INFO  com.dzj.miaosha.dao.GoodsDaoTest - Started GoodsDaoTest in 8.018 seconds (JVM running for 9.782)
-2018-03-15 12:33:55.170 [main] INFO  com.dzj.miaosha.dao.GoodsDaoTest - Starting GoodsDaoTest on DESKTOP-MS8QNBH with PID 6264 (started by DZJ in E:\web\秒杀\miaosha\miaosha)
-2018-03-15 12:33:55.173 [main] INFO  com.dzj.miaosha.dao.GoodsDaoTest - No active profile set, falling back to default profiles: default
-2018-03-15 12:34:03.041 [main] INFO  com.dzj.miaosha.dao.GoodsDaoTest - Started GoodsDaoTest in 8.48 seconds (JVM running for 10.271)
-2018-03-15 12:34:29.390 [main] INFO  com.dzj.miaosha.dao.GoodsDaoTest - Starting GoodsDaoTest on DESKTOP-MS8QNBH with PID 13300 (started by DZJ in E:\web\秒杀\miaosha\miaosha)
-2018-03-15 12:34:29.392 [main] INFO  com.dzj.miaosha.dao.GoodsDaoTest - No active profile set, falling back to default profiles: default
-2018-03-15 12:34:37.553 [main] INFO  com.dzj.miaosha.dao.GoodsDaoTest - Started GoodsDaoTest in 8.761 seconds (JVM running for 10.553)
-2018-03-15 12:56:38.242 [main] INFO  com.dzj.miaosha.dao.OrderTest - Starting OrderTest on DESKTOP-MS8QNBH with PID 4772 (started by DZJ in E:\web\秒杀\miaosha\miaosha)
-2018-03-15 12:56:38.243 [main] INFO  com.dzj.miaosha.dao.OrderTest - No active profile set, falling back to default profiles: default
-2018-03-15 12:56:45.794 [main] INFO  com.dzj.miaosha.dao.OrderTest - Started OrderTest in 8.107 seconds (JVM running for 9.837)
-2018-03-15 12:57:56.849 [main] INFO  com.dzj.miaosha.dao.OrderTest - Starting OrderTest on DESKTOP-MS8QNBH with PID 4164 (started by DZJ in E:\web\秒杀\miaosha\miaosha)
-2018-03-15 12:57:56.851 [main] INFO  com.dzj.miaosha.dao.OrderTest - No active profile set, falling back to default profiles: default
-2018-03-15 12:58:04.798 [main] INFO  com.dzj.miaosha.dao.OrderTest - Started OrderTest in 8.56 seconds (JVM running for 10.461)
-2018-03-15 15:31:32.845 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Starting MiaoshaApplication on DESKTOP-MS8QNBH with PID 10684 (started by DZJ in E:\web\秒杀\miaosha\miaosha)
-2018-03-15 15:31:32.852 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - No active profile set, falling back to default profiles: default
-2018-03-15 15:31:39.561 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Started MiaoshaApplication in 7.099 seconds (JVM running for 9.073)
-2018-03-15 16:16:34.123 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Starting MiaoshaApplication on DESKTOP-MS8QNBH with PID 11236 (started by DZJ in E:\web\秒杀\miaosha\miaosha)
-2018-03-15 16:16:34.129 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - No active profile set, falling back to default profiles: default
-2018-03-15 16:16:43.601 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Started MiaoshaApplication in 10.04 seconds (JVM running for 11.249)
-2018-03-15 16:26:38.745 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Starting MiaoshaApplication on DESKTOP-MS8QNBH with PID 13868 (started by DZJ in E:\web\秒杀\miaosha\miaosha)
-2018-03-15 16:26:38.752 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - No active profile set, falling back to default profiles: default
-2018-03-15 16:26:50.139 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Started MiaoshaApplication in 12.003 seconds (JVM running for 13.262)
-2018-03-15 16:44:49.956 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Starting MiaoshaApplication on DESKTOP-MS8QNBH with PID 10476 (started by DZJ in E:\web\秒杀\miaosha\miaosha)
-2018-03-15 16:44:49.961 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - No active profile set, falling back to default profiles: default
-2018-03-15 16:44:57.293 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Started MiaoshaApplication in 7.76 seconds (JVM running for 9.749)
-2018-03-15 16:55:01.027 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Starting MiaoshaApplication on DESKTOP-MS8QNBH with PID 15096 (started by DZJ in E:\web\秒杀\miaosha\miaosha)
-2018-03-15 16:55:01.032 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - No active profile set, falling back to default profiles: default
-2018-03-15 16:55:07.654 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Started MiaoshaApplication in 7.011 seconds (JVM running for 8.662)
-2018-03-15 17:01:25.357 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Starting MiaoshaApplication on DESKTOP-MS8QNBH with PID 13268 (started by DZJ in E:\web\秒杀\miaosha\miaosha)
-2018-03-15 17:01:25.362 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - No active profile set, falling back to default profiles: default
-2018-03-15 17:01:31.950 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Started MiaoshaApplication in 6.983 seconds (JVM running for 8.545)
+2018-03-16 09:37:52.139 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Starting MiaoshaApplication on DESKTOP-MS8QNBH with PID 11908 (started by DZJ in E:\web\秒杀\miaosha\miaosha)
+2018-03-16 09:37:52.150 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - No active profile set, falling back to default profiles: default
+2018-03-16 09:38:05.286 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Started MiaoshaApplication in 14.253 seconds (JVM running for 17.329)
+2018-03-16 10:03:25.612 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Starting MiaoshaApplication on DESKTOP-MS8QNBH with PID 6404 (started by DZJ in E:\web\秒杀\miaosha\miaosha)
+2018-03-16 10:03:25.617 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - No active profile set, falling back to default profiles: default
+2018-03-16 10:03:32.446 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Started MiaoshaApplication in 7.268 seconds (JVM running for 9.071)
+2018-03-16 12:07:06.636 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Starting MiaoshaApplication on DESKTOP-MS8QNBH with PID 1324 (started by DZJ in E:\web\秒杀\miaosha\miaosha)
+2018-03-16 12:07:06.641 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - No active profile set, falling back to default profiles: default
+2018-03-16 13:03:11.205 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Starting MiaoshaApplication on DESKTOP-MS8QNBH with PID 7480 (started by DZJ in E:\web\秒杀\miaosha\miaosha)
+2018-03-16 13:03:11.209 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - No active profile set, falling back to default profiles: default
+2018-03-16 13:03:17.691 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Started MiaoshaApplication in 6.87 seconds (JVM running for 8.526)
+2018-03-16 13:43:10.068 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Starting MiaoshaApplication on DESKTOP-MS8QNBH with PID 4952 (started by DZJ in E:\web\秒杀\miaosha\miaosha)
+2018-03-16 13:43:10.073 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - No active profile set, falling back to default profiles: default
+2018-03-16 13:43:16.731 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Started MiaoshaApplication in 7.06 seconds (JVM running for 8.64)
+2018-03-16 14:13:46.556 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Starting MiaoshaApplication on DESKTOP-MS8QNBH with PID 8732 (started by DZJ in E:\web\秒杀\miaosha\miaosha)
+2018-03-16 14:13:46.558 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - No active profile set, falling back to default profiles: default
+2018-03-16 14:13:49.335 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Started MiaoshaApplication in 2.941 seconds (JVM running for 3.599)
+2018-03-16 14:20:12.315 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Starting MiaoshaApplication on DESKTOP-MS8QNBH with PID 19300 (started by DZJ in E:\web\秒杀\miaosha\miaosha)
+2018-03-16 14:20:12.318 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - No active profile set, falling back to default profiles: default
+2018-03-16 14:20:15.262 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Started MiaoshaApplication in 3.118 seconds (JVM running for 3.766)
+2018-03-16 14:47:18.086 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Starting MiaoshaApplication on DESKTOP-MS8QNBH with PID 11848 (started by DZJ in E:\web\秒杀\miaosha\miaosha)
+2018-03-16 14:47:18.088 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - No active profile set, falling back to default profiles: default
+2018-03-16 14:47:20.969 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Started MiaoshaApplication in 3.048 seconds (JVM running for 3.715)
+2018-03-16 16:19:11.629 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Starting MiaoshaApplication on DESKTOP-MS8QNBH with PID 15512 (started by DZJ in E:\web\秒杀\miaosha\miaosha)
+2018-03-16 16:19:11.631 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - No active profile set, falling back to default profiles: default
+2018-03-16 16:19:14.527 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Started MiaoshaApplication in 3.071 seconds (JVM running for 3.747)
+2018-03-16 16:56:37.598 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Starting MiaoshaApplication on DESKTOP-MS8QNBH with PID 9708 (started by DZJ in E:\web\秒杀\miaosha\miaosha)
+2018-03-16 16:56:37.600 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - No active profile set, falling back to default profiles: default
+2018-03-16 16:56:40.953 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Started MiaoshaApplication in 3.535 seconds (JVM running for 4.366)
+2018-03-16 17:09:39.961 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Starting MiaoshaApplication on DESKTOP-MS8QNBH with PID 12560 (started by DZJ in E:\web\秒杀\miaosha\miaosha)
+2018-03-16 17:09:39.964 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - No active profile set, falling back to default profiles: default
+2018-03-16 17:09:44.900 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Started MiaoshaApplication in 5.26 seconds (JVM running for 5.821)
+2018-03-16 17:24:37.985 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Starting MiaoshaApplication on DESKTOP-MS8QNBH with PID 5980 (started by DZJ in E:\web\秒杀\miaosha\miaosha)
+2018-03-16 17:24:37.988 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - No active profile set, falling back to default profiles: default
+2018-03-16 17:24:42.224 [restartedMain] INFO  com.dzj.miaosha.MiaoshaApplication - Started MiaoshaApplication in 4.478 seconds (JVM running for 4.997)

@@ -7,6 +7,7 @@ public class GoodsKey extends BassPrefix{
 	}
 
 	public static GoodsKey getById =new GoodsKey("goodsId");
+	public static GoodsKey getGoodsList =new GoodsKey("goodsList");
 	
 	
 }

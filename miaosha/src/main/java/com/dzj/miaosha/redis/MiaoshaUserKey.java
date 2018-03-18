@@ -2,7 +2,7 @@ package com.dzj.miaosha.redis;
 
 public class MiaoshaUserKey extends BassPrefix {
 
-	public static final int TOKEN_EXPIRE=3600 * 24 ;
+	public static final int TOKEN_EXPIRE=3600  ;
 	
 	private MiaoshaUserKey(int expireSeconds, String prefix) {
 		super(expireSeconds, prefix);

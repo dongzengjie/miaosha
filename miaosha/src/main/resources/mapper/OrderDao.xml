@@ -38,7 +38,7 @@
 	</insert>
 	
 	<insert id="insertMiaoshaOrder" parameterType="com.dzj.miaosha.entity.MiaoshaOrder">
-		INSERT INTO miaosha_order 
+		INSERT ignore INTO  miaosha_order 
 		(
 			user_id,
 			order_id,
