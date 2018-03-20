@@ -6,7 +6,10 @@ public class UserKey extends BassPrefix{
 		super(0, prefix);
 	}
 
-	public static UserKey getById =new UserKey("id");
+	private UserKey(int time ,String prefix) {
+		super(time, prefix);
+	}
+	public static UserKey getById =new UserKey(3000,"id");
 	public static UserKey getByName =new UserKey("userName");
 	
 }

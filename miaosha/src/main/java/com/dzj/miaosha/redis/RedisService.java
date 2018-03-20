@@ -181,7 +181,7 @@ public class RedisService {
 
 	}
 
-	private <T> String beanToString(T value) {
+	public static <T> String beanToString(T value) {
 
 		if (value == null) {
 			return null;
@@ -200,7 +200,7 @@ public class RedisService {
 
 	}
 	
-	@SuppressWarnings("unused")
+	
 	private <T> String listToString(List<T> list) {
 		if(list ==null) {
 			return null;
@@ -210,7 +210,7 @@ public class RedisService {
 	}
 	
 	
-	@SuppressWarnings("unchecked")
+	
 	private <T> List<T> stringToList(String src,Class<T> clazz) {
 		if(src ==null) {
 			return null;
@@ -220,7 +220,7 @@ public class RedisService {
 	}
 
 	@SuppressWarnings("unchecked")
-	private <T> T stringToBean(String str, Class<T> clazz) {
+	public static <T> T stringToBean(String str, Class<T> clazz) {
 
 		if (str == null || str.length() <= 0 || clazz == null) {
 			return null;

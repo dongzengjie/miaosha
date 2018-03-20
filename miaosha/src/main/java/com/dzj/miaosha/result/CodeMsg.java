@@ -2,6 +2,7 @@ package com.dzj.miaosha.result;
 
 public class CodeMsg {
 
+	
 	private int code;
 	private String msg;
 	

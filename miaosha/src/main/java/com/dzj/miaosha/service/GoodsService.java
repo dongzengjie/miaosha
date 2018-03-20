@@ -24,5 +24,5 @@ public interface GoodsService {
 	 * @param goodsId
 	 * @return
 	 */
-	public int reduceStock(long goodsId);
+	public boolean reduceStock(long goodsId);
 }

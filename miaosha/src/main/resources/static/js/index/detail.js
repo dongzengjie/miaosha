@@ -62,8 +62,16 @@ function handleSeckill(goodsId, node) {
 								$("#killBtn").addClass('disabled');
 
 								$.post(killurl, {}, function(data) {
-								
-										node.html('<span class="labe label-success">'+data.msg+'</spna>')
+										
+										
+											if(data.code == 0){
+												getMiaoshaResult(goodsId,node);
+											}else{
+												node.html('<span class="labe label-success">'+data.msg+'</spna>')
+											}
+									
+									
+										//node.html('<span class="labe label-success">'+data.msg+'</spna>')
 								
 									
 
@@ -80,3 +88,40 @@ function handleSeckill(goodsId, node) {
 	});
 
 }
+
+function getMiaoshaResult(goodsId,node){
+	g_showLoading();
+	$.ajax({
+		url:"/miaosha/miaosha/result",
+		type:"GET",
+		data:{
+			goodsId:goodsId,
+		},
+		success:function(data){
+			if(data.code == 0){
+				var result = data.data;
+				if(result < 0){
+					layer.msg("对不起，秒杀失败");
+				}else if(result == 0){//继续轮询
+					setTimeout(function(){
+						getMiaoshaResult(goodsId,node);
+					}, 50);
+				}else{
+					node.html('<span class="labe label-success">秒杀成功</spna>');
+					layer.closeAll();
+				}
+			}else{
+				layer.msg(data.msg);
+			}
+		},
+		error:function(){
+			layer.msg("客户端请求有误");
+		}
+	});
+	
+	
+}
+
+
+
+

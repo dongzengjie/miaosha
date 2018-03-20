@@ -36,23 +36,26 @@
 		#{payDate}
 		)
 	</insert>
-	
-	<insert id="insertMiaoshaOrder" parameterType="com.dzj.miaosha.entity.MiaoshaOrder">
-		INSERT ignore INTO  miaosha_order 
+
+	<insert id="insertMiaoshaOrder" parameterType="com.dzj.miaosha.entity.MiaoshaOrder"
+		useGeneratedKeys="true" keyColumn="miaosha_order_id" keyProperty="miaoshaOrderId">
+		INSERT ignore INTO
+		miaosha_order
 		(
-			user_id,
-			order_id,
-			goods_id
+		user_id,
+		order_id,
+		goods_id
 		)
 		VALUES
 		(
-			#{userId},
-			#{orderId},
-			#{goodsId}
+		#{userId},
+		#{orderId},
+		#{goodsId}
 		)
 	</insert>
-	
+
 	<select id="getMiaoshaOrderByUserIdAndGoodsId" parameterType="com.dzj.miaosha.entity.MiaoshaOrder">
-		select * from miaosha_order where user_id=#{userId} and goods_id=#{goodsId}
+		select * from miaosha_order where user_id=#{userId} and
+		goods_id=#{goodsId}
 	</select>
 </mapper>

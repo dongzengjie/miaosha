@@ -25,15 +25,8 @@ public class GoodServiceImpl implements GoodsService {
 	private RedisService redisService;
 
 	public List<GoodsVo> getGoodsList() {
-		
-		//List<GoodsVo> goodsVos =goodsDao.getListGoodsVo();
 	
-		List<GoodsVo> goodsVos =redisService.getList(GoodsKey.getGoodsList, "", GoodsVo.class);
-		if(goodsVos ==null) {
-			goodsVos =goodsDao.getListGoodsVo();
-			redisService.setList(GoodsKey.getGoodsList, "", goodsVos);
-		}
-		return goodsVos;
+		return goodsDao.getListGoodsVo();
 	}
 
 	@Override
@@ -51,14 +44,19 @@ public class GoodServiceImpl implements GoodsService {
 
 		return goods;
 	}
+	
+	
 
 	@Override
-	public int reduceStock(long goodsId) {
+	public boolean reduceStock(long goodsId) {
 		if (goodsId <= 0) {
 			throw new MiaoshaException("商品id为空", GlobalEnums.Server_ERROR.getState());
 		}
-
-		return goodsDao.reduceStock(goodsId, new Date());
+		int effect =goodsDao.reduceStock(goodsId, new Date());
+		return effect > 0 ;
 	}
+
+
+
 
 }
